@@ -1,0 +1,149 @@
+{
+  "total_tests": 44,
+  "anomalies": {
+    "response_time": [
+      {
+        "type": "response_time",
+        "endpoint": "/api/v1/Authors/authors/books/{idBook}",
+        "method": "GET",
+        "response_time": 1.035867,
+        "average_time": 0.9250760454545454,
+        "std_dev": 0.04569310214053327,
+        "z_score": 2.42467570279442,
+        "timestamp": "2024-12-07T23:42:35.699309"
+      },
+      {
+        "type": "response_time",
+        "endpoint": "/api/v1/Authors/{id}",
+        "method": "GET",
+        "response_time": 0.873856,
+        "average_time": 0.9250760454545454,
+        "std_dev": 0.04569310214053327,
+        "z_score": -1.1209579357736208,
+        "timestamp": "2024-12-07T23:42:37.461566"
+      },
+      {
+        "type": "response_time",
+        "endpoint": "/api/v1/Books",
+        "method": "POST",
+        "response_time": 1.049877,
+        "average_time": 0.9250760454545454,
+        "std_dev": 0.04569310214053327,
+        "z_score": 2.731286533394427,
+        "timestamp": "2024-12-07T23:42:44.527326"
+      },
+      {
+        "type": "response_time",
+        "endpoint": "/api/v1/Users",
+        "method": "GET",
+        "response_time": 1.061348,
+        "average_time": 0.9250760454545454,
+        "std_dev": 0.04569310214053327,
+        "z_score": 2.9823309900548636,
+        "timestamp": "2024-12-07T23:43:00.415769"
+      },
+      {
+        "type": "response_time",
+        "endpoint": "/api/v1/Users",
+        "method": "POST",
+        "response_time": 1.050303,
+        "average_time": 0.9250760454545454,
+        "std_dev": 0.04569310214053327,
+        "z_score": 2.7406096036182395,
+        "timestamp": "2024-12-07T23:43:01.472986"
+      }
+    ],
+    "status_code": [
+      {
+        "type": "status_code",
+        "endpoint": "/api/v1/Authors/authors/books/{idBook}",
+        "method": "GET",
+        "status_code": 200,
+        "expected_status": 200,
+        "response_time": 1.035867,
+        "timestamp": "2024-12-07T23:42:35.699309"
+      },
+      {
+        "type": "status_code",
+        "endpoint": "/api/v1/Books",
+        "method": "POST",
+        "status_code": 200,
+        "expected_status": 200,
+        "response_time": 1.049877,
+        "timestamp": "2024-12-07T23:42:44.527326"
+      },
+      {
+        "type": "status_code",
+        "endpoint": "/api/v1/Users",
+        "method": "GET",
+        "status_code": 200,
+        "expected_status": 200,
+        "response_time": 1.061348,
+        "timestamp": "2024-12-07T23:43:00.415769"
+      },
+      {
+        "type": "status_code",
+        "endpoint": "/api/v1/Users",
+        "method": "POST",
+        "status_code": 200,
+        "expected_status": 200,
+        "response_time": 1.050303,
+        "timestamp": "2024-12-07T23:43:01.472986"
+      }
+    ],
+    "pattern": [
+      {
+        "type": "pattern",
+        "endpoint": "/api/v1/Authors/authors/books/{idBook}",
+        "method": "GET",
+        "status_code": 200,
+        "response_time": 1.035867,
+        "passed": true,
+        "timestamp": "2024-12-07T23:42:35.699309"
+      },
+      {
+        "type": "pattern",
+        "endpoint": "/api/v1/Books",
+        "method": "POST",
+        "status_code": 200,
+        "response_time": 1.049877,
+        "passed": true,
+        "timestamp": "2024-12-07T23:42:44.527326"
+      },
+      {
+        "type": "pattern",
+        "endpoint": "/api/v1/Users",
+        "method": "GET",
+        "status_code": 200,
+        "response_time": 1.061348,
+        "passed": true,
+        "timestamp": "2024-12-07T23:43:00.415769"
+      },
+      {
+        "type": "pattern",
+        "endpoint": "/api/v1/Users",
+        "method": "POST",
+        "status_code": 200,
+        "response_time": 1.050303,
+        "passed": true,
+        "timestamp": "2024-12-07T23:43:01.472986"
+      },
+      {
+        "type": "pattern",
+        "endpoint": "/api/v1/Users/{id}",
+        "method": "GET",
+        "status_code": 404,
+        "response_time": 0.885885,
+        "passed": false,
+        "timestamp": "2024-12-07T23:43:02.360553"
+      }
+    ]
+  },
+  "summary": {
+    "total_anomalies": 14,
+    "response_time_anomalies": 5,
+    "status_code_anomalies": 4,
+    "pattern_anomalies": 5
+  },
+  "analyzed_at": "2024-12-08T00:06:38.491186"
+}
