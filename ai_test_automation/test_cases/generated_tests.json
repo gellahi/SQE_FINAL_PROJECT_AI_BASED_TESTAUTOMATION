@@ -1,0 +1,422 @@
+[
+  {
+    "endpoint": "/api/v1/Activities",
+    "method": "GET",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/Activities",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Activities",
+    "method": "POST",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid POST request to /api/v1/Activities",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Activities/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": 1
+    },
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/Activities/{id}",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Activities/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Activities/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": 1
+    },
+    "expected_status": 200,
+    "description": "Valid PUT request to /api/v1/Activities/{id}",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Activities/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Activities/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": 99
+    },
+    "expected_status": 200,
+    "description": "Valid DELETE request to /api/v1/Activities/{id}",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Activities/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Authors",
+    "method": "GET",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/Authors",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Authors",
+    "method": "POST",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid POST request to /api/v1/Authors",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Authors/authors/books/{idBook}",
+    "method": "GET",
+    "parameters": {
+      "idBook": 1
+    },
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/Authors/authors/books/{idBook}",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Authors/authors/books/{idBook}",
+    "method": "GET",
+    "parameters": {
+      "idBook": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter idBook",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Authors/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": 99
+    },
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/Authors/{id}",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Authors/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.676105"
+  },
+  {
+    "endpoint": "/api/v1/Authors/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": 99
+    },
+    "expected_status": 200,
+    "description": "Valid PUT request to /api/v1/Authors/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Authors/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Authors/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": 99
+    },
+    "expected_status": 200,
+    "description": "Valid DELETE request to /api/v1/Authors/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Authors/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Books",
+    "method": "GET",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/Books",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Books",
+    "method": "POST",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid POST request to /api/v1/Books",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Books/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": 1
+    },
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/Books/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Books/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Books/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": 50
+    },
+    "expected_status": 200,
+    "description": "Valid PUT request to /api/v1/Books/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Books/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Books/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": 1
+    },
+    "expected_status": 200,
+    "description": "Valid DELETE request to /api/v1/Books/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Books/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos",
+    "method": "GET",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/CoverPhotos",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos",
+    "method": "POST",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid POST request to /api/v1/CoverPhotos",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos/books/covers/{idBook}",
+    "method": "GET",
+    "parameters": {
+      "idBook": 1
+    },
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/CoverPhotos/books/covers/{idBook}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos/books/covers/{idBook}",
+    "method": "GET",
+    "parameters": {
+      "idBook": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter idBook",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": 99
+    },
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/CoverPhotos/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": 50
+    },
+    "expected_status": 200,
+    "description": "Valid PUT request to /api/v1/CoverPhotos/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": 50
+    },
+    "expected_status": 200,
+    "description": "Valid DELETE request to /api/v1/CoverPhotos/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/CoverPhotos/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Users",
+    "method": "GET",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/Users",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Users",
+    "method": "POST",
+    "parameters": {},
+    "expected_status": 200,
+    "description": "Valid POST request to /api/v1/Users",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Users/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": 50
+    },
+    "expected_status": 200,
+    "description": "Valid GET request to /api/v1/Users/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Users/{id}",
+    "method": "GET",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Users/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": 50
+    },
+    "expected_status": 200,
+    "description": "Valid PUT request to /api/v1/Users/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Users/{id}",
+    "method": "PUT",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Users/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": 50
+    },
+    "expected_status": 200,
+    "description": "Valid DELETE request to /api/v1/Users/{id}",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  },
+  {
+    "endpoint": "/api/v1/Users/{id}",
+    "method": "DELETE",
+    "parameters": {
+      "id": null
+    },
+    "expected_status": 400,
+    "description": "Missing required parameter id",
+    "generated_at": "2024-12-07T23:41:34.677102"
+  }
+]

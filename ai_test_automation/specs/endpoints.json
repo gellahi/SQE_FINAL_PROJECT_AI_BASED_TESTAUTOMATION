@@ -1,0 +1,821 @@
+[
+  {
+    "path": "/api/v1/Activities",
+    "method": "GET",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Activity"
+              }
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Activity"
+              }
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Activity"
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Activities",
+    "method": "POST",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Activities/{id}",
+    "method": "GET",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Activities/{id}",
+    "method": "PUT",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Activities/{id}",
+    "method": "DELETE",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Authors",
+    "method": "GET",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Author"
+              }
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Author"
+              }
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Author"
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Authors",
+    "method": "POST",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Author"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Author"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Author"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Authors/authors/books/{idBook}",
+    "method": "GET",
+    "parameters": [
+      {
+        "name": "idBook",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Author"
+              }
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Author"
+              }
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Author"
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Authors/{id}",
+    "method": "GET",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Author"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Author"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Author"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Authors/{id}",
+    "method": "PUT",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Author"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Author"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Author"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Authors/{id}",
+    "method": "DELETE",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Books",
+    "method": "GET",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Book"
+              }
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Book"
+              }
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Book"
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Books",
+    "method": "POST",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Books/{id}",
+    "method": "GET",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Book"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Book"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/Book"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Books/{id}",
+    "method": "PUT",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Books/{id}",
+    "method": "DELETE",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/CoverPhotos",
+    "method": "GET",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverPhoto"
+              }
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverPhoto"
+              }
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverPhoto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/CoverPhotos",
+    "method": "POST",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/CoverPhoto"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/CoverPhoto"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/CoverPhoto"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/CoverPhotos/books/covers/{idBook}",
+    "method": "GET",
+    "parameters": [
+      {
+        "name": "idBook",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverPhoto"
+              }
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverPhoto"
+              }
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/CoverPhoto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/CoverPhotos/{id}",
+    "method": "GET",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/CoverPhoto"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/CoverPhoto"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/CoverPhoto"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/CoverPhotos/{id}",
+    "method": "PUT",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/CoverPhoto"
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/CoverPhoto"
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "$ref": "#/components/schemas/CoverPhoto"
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/CoverPhotos/{id}",
+    "method": "DELETE",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Users",
+    "method": "GET",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success",
+        "content": {
+          "text/plain; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          },
+          "application/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          },
+          "text/json; v=1.0": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Users",
+    "method": "POST",
+    "parameters": [],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Users/{id}",
+    "method": "GET",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Users/{id}",
+    "method": "PUT",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  },
+  {
+    "path": "/api/v1/Users/{id}",
+    "method": "DELETE",
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success"
+      }
+    },
+    "description": ""
+  }
+]
