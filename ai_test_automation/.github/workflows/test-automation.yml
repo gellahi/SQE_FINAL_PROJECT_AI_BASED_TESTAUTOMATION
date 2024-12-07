@@ -1,0 +1,101 @@
+name: AI Test Automation Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Parse API Specifications
+      run: |
+        python specs/api_parser.py
+        
+    - name: Generate Test Cases
+      run: |
+        python test_cases/generate_tests.py
+        
+    - name: Run Test Suite
+      run: |
+        pytest tests/ -v --html=test_results/report.html --self-contained-html
+    
+    - name: Run Anomaly Detection
+      run: |
+        python ml/anomaly_detector.py
+    
+    - name: Generate Test Reports
+      run: |
+        python ci_cd/report_generator.py
+    
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: test-results
+        path: |
+          test_results/report.html
+          test_results/execution_results.json
+          test_results/anomaly_analysis.json
+          test_results/test_report_*.md
+          test_results/dashboard_*.html
+          test_results/response_time_dist.png
+        retention-days: 30
+
+    - name: Create Issue with Test Results
+      if: always()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const report = JSON.parse(fs.readFileSync('test_results/anomaly_analysis.json', 'utf8'));
+          const testResults = JSON.parse(fs.readFileSync('test_results/execution_results.json', 'utf8'));
+          
+          const summary = `
+          ## Test Execution Summary
+          - Total Tests: ${report.total_tests}
+          - Passed: ${testResults.filter(t => t.passed).length}
+          - Failed: ${testResults.filter(t => !t.passed).length}
+          
+          ## Anomaly Detection Results
+          - Response Time Anomalies: ${report.summary.response_time_anomalies}
+          - Status Code Anomalies: ${report.summary.status_code_anomalies}
+          - Pattern Anomalies: ${report.summary.pattern_anomalies}
+          `;
+          
+          await github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `Test Report - ${new Date().toISOString()}`,
+            body: summary
+          });
+
+    - name: Notify on Failure
+      if: failure()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: '❌ Pipeline Failure Alert',
+            body: 'The test automation pipeline has failed. Please check the logs for details.',
+            labels: ['pipeline-failure']
+          })
