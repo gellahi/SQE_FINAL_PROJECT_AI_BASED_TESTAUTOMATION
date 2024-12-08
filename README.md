@@ -177,10 +177,4 @@ Copy code
 
 ```bash
 [🔗 GitHub Repository](https://github.com/gellahi/SQE_FINAL_PROJECT_AI_BASED_TESTAUTOMATION.git
-
-
-
-
-
-
-
+````
