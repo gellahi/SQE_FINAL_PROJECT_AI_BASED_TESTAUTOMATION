@@ -1,6 +1,5 @@
 
-markdown
-Copy code
+
 # **AI-Powered Test Automation for Application Testing**
 
 ## **🚀 Overview**  
